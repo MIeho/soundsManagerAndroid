@@ -1,9 +1,12 @@
 package com.mieho.sm.settings.persistence.entity;
 
+import androidx.room.Entity;
+
 /**
  * @author Gabriel Kiełbus on 15.11.2018 22:02
  * @project SoundsManager
  */
+@Entity
 public class DaySettings {
 
     private boolean settingActive;
