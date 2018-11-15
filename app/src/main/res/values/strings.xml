@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sounds Manager</string>
+    <string name="mediaVolLabel">Media volume level</string>
+</resources>
