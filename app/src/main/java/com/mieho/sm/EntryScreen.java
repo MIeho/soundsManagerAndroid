@@ -28,7 +28,8 @@ public class EntryScreen extends AppCompatActivity {
 
         List<ScheduleEntity> schedulesList = scheduleDb.scheduleDao().getAll();
         if (schedulesList == null || schedulesList.isEmpty()) {
-            scheduleEntity = new ScheduleEntity().setScheduleName("NaszScheduleNowy");
+            scheduleEntity = new ScheduleEntity();
+            scheduleEntity.setScheduleName("NaszScheduleNowy");
             scheduleDb.scheduleDao().insertAll(scheduleEntity);
         } else {
             scheduleEntity = schedulesList.stream().findFirst().get();
